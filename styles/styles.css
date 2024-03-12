@@ -1,9 +1,9 @@
 nav {
     background-color: steelblue;
-    padding: 10%;
+    padding: 0%;
 }
 nav a {
-    color: white;
+    color: rgb(255, 255, 255);
     display: block;
     padding: 20px;
 }
