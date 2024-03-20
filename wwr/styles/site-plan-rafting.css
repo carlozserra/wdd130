@@ -1,9 +1,9 @@
-@import url(https://fonts.google.com/specimen/Share?preview.text=HORNY&preview.size=76);
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Martel:wght@200;300;400;600;700;800;900&family=Noto+Sans+Khojki&display=swap);
 
 body{
     font-family: var(--paragraph-font);
     max-width: 960px;
-    padding 20px;
+    padding: 20px;
 }
 
 :root{
@@ -12,13 +12,13 @@ body{
     --accent1-color: jet #363636;
     --accent2-color: platinum #e5e5e5;
 
-    --heading-font: Share, regular;
-    --paragraph-font: Share, ;
+    --heading-font:"Martel", serif;
+    --paragraph-font:"Martel", serif;
 
-    --nav-background-color: #000000;
-    --nav-link-color: #000000;
-    --nav-hover-link-color: #;
-    --nav-hover-background-color: #;
+    --nav-background-color: #e5e5e5;
+    --nav-link-color: #242f40;
+    --nav-hover-link-color: #242f40;
+    --nav-hover-background-color: #CCA43B;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -48,7 +48,7 @@ nav a {
 }
 
 nav a:link, nav a:visited {
-    color: var(--nav --nav-link-color);
+    color: var(--nav-link-color);
 }
 
 nav a:hover {
