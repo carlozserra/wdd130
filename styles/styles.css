@@ -1,4 +1,4 @@
-* w {
+*{
     margin: 0;
     padding:0;
     box-sizing: border-box;
@@ -38,12 +38,13 @@ aside {
 aside img {
     width: 200px;
     height: auto;
+    position: relative;
 }
 
 main img{
     width: 150px;
     height: auto;
-     float : right;
+    float : right;
 }
 
 footer{ 
@@ -53,14 +54,14 @@ footer{
 }
 
 aside h2 {
-    position: absolute;
     top:  650px;
     left: 170px;
+    position: absolute;
 }
 
-/*Class Selector*/
+/*Class Selectors*/
 
-.box {
+.box{
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
