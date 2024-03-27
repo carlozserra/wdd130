@@ -15,8 +15,11 @@ nav a {
 }
 h1 {
     color: steelblue;
-    
+
 }
+
+
+
 img {
     width: 150px;
     height: auto;
@@ -32,13 +35,19 @@ main {
 }
 
 aside {
-    width: 20rem;
+    width: 20em;
     text-align: center;
 }
 aside img {
     width: 200px;
     height: auto;
     position: relative;
+}
+
+aside h2 {
+    top: 640px;
+    left: 100px;
+    position: absolute;
 }
 
 main img{
@@ -53,11 +62,7 @@ footer{
     text-align: center;
 }
 
-aside h2 {
-    top:  650px;
-    left: 170px;
-    position: absolute;
-}
+
 
 /*Class Selectors*/
 
