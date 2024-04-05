@@ -10,80 +10,129 @@
     --paragraph-font: "Martel", serif;
 
     --nav-background-color: #e5e5e5;
-    --nav-link-color: #fcc203;
-    --nav-hover-link-color: #086bff;
-    --nav-hover-background-color: #cca43b;
+    --nav-link-color: #242f40;
+    --nav-hover-link-color: #fcc203;
+    --nav-hover-background-color: #212121;  
+
+}
+/* Estilizando o corpo do documento */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  margin: 0 auto; /* Centraliza o conteúdo na página */
+  padding: 0 20px; /* Adiciona espaçamento nas laterais */
 }
 
-body{
-    margin: 0;
-    padding: 0;
-    font-family: var(--paragraph-font); 
+/* Estilizando os cabeçalhos */
+h1 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
-h1, h2{
-    font-family: var(--heading-font);
-    color: var(--secondary-color);
+h2 {
+  color: var(--secondary-color);
 }
 
+/* Estilizando os parágrafos */
 p {
-    color: var(--primary-color); 
+  padding: 10px 0;
 }
 
+/* Estilizando o cabeçalho */
 header {
-    padding: 20px;
-    display: flex;
-    justify-content: space-between
+  padding: 20px;
+  background-color: var(--accent1-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.social-media-links a {
+.logo img {
+  height: 50px; /* Ajuste conforme necessário */
+}
+
+nav a {
   text-decoration: none;
+  color: var(--nav-link-color);
+  padding: 10px;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+/* Estilizando o herói */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Altura do herói */
+  overflow: hidden;
 }
 
 .hero img {
-    display: block; 
-    width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Garante que a imagem cubra todo o contêiner */
 }
 
-.hero {
-  position: relative;
-  margin-bottom: 40px;
-}
-
-.hero article {
+.hero h1 {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  padding: 20px;
-  bottom: 20px;
-  left: 20px;
-  max-width: 50%;
-}
-
-.hero article img {
-  float: right;
-  margin-left: 20px;
-}
-
-footer {
-  background-color: var(--primary-color);
-  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
   text-align: center;
+}
+
+/* Estilizando o artigo */
+article {
+  position: absolute;
+  top: 30%;
+  left: 75%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adicionando opacidade ao fundo */
+  padding: 10px;
+  color: white;
+  width: 20%; /* Largura do artigo */
+  max-width: 500px; /* Largura máxima do artigo */
+
+}
+
+article img {
+  float: right;
+  width: 12px; /* Tamanho da imagem */
+  height: auto;
+}
+
+/* Estilizando as seções */
+section {
   padding: 20px;
+}
+
+section img {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%; /* Ocupa toda a largura do contêiner */
+}
+
+/* Estilizando o rodapé */
+footer {
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 footer p {
-  margin: 0;
+  margin-bottom: 10px;
 }
 
-.sociallinks img {
-  width: 30px;
-  height: auto;
-  margin: 0 5px;
+footer .sociallinks {
+  margin-top: 10px;
 }
 
-.sociallinks a {
-  text-decoration: none;
-  color: #fff;
+footer .sociallinks a {
+  margin: 0 10px;
 }
