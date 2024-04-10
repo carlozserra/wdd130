@@ -7,23 +7,23 @@ body{
 }
 
 :root{
-    --primary-color: Gunmetal #242f40 ;
-    --secondary-color: Satin sheenld #CCA43B;
-    --accent1-color: jet #363636;
-    --accent2-color: platinum #e5e5e5;
+    --primary-color: #E5E5E5 ;
+    --secondary-color: #1e3961;
+    --accent1-color: #CCA43B;
+    --accent2-color:  #363636;
 
     --heading-font:"Martel", serif;
     --paragraph-font:"Martel", serif;
 
     --nav-background-color: #e5e5e5;
-    --nav-link-color: #242f40;
-    --nav-hover-link-color: #242f40;
+    --nav-link-color: #ec0000;
+    --nav-hover-link-color: #ffffff;
     --nav-hover-background-color: #CCA43B;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 header {

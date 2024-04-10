@@ -1,138 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Martel:wght@200;300;400;600;700;800;900&family=Noto+Sans+Khojki&display=swap');
+
+@import url(https://fonts.googleapis.com/css2?family=Acme&family=Martel:wght@200;300;400;600;700;800;900&family=Noto+Sans+Khojki&display=swap);
+
 
 :root{
-    --primary-color: #212121;
-    --secondary-color: #fcc203;
-    --accent1-color: #fcc203;
-    --accent2-color: #e5e5e5;
+  --primary-color: #CCA43B ;
+  --secondary-color: #242F40;
+  --accent1-color: #e5e5e5;
+  --accent2-color:  #363636;
 
-    --heading-font: "Martel", serif;
-    --paragraph-font: "Martel", serif;
+  --heading-font:"Martel", serif;
+  --paragraph-font:"Martel", serif;
 
-    --nav-background-color: #e5e5e5;
-    --nav-link-color: #242f40;
-    --nav-hover-link-color: #fcc203;
-    --nav-hover-background-color: #212121;  
-
-}
-/* Estilizando o corpo do documento */
-body {
-  font-family: var(--paragraph-font);
-  max-width: 960px;
-  margin: 0 auto; /* Centraliza o conteúdo na página */
-  padding: 0 20px; /* Adiciona espaçamento nas laterais */
+  --nav-background-color: #e5e5e5;
+  --nav-link-color: #ec0000;
+  --nav-hover-link-color: #ffffff;
+  --nav-hover-background-color: #CCA43B
 }
 
-/* Estilizando os cabeçalhos */
-h1 {
-  font-family: var(--heading-font);
+body{
+  max-width: 900px;
+  padding: 20px;
+  margin: 0% auto;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+h1,h2 {
+  color: var(--primary-color);
+} 
+
+p {
   color: var(--primary-color);
 }
 
-h2 {
-  color: var(--secondary-color);
-}
-
-/* Estilizando os parágrafos */
-p {
-  padding: 10px 0;
-}
-
-/* Estilizando o cabeçalho */
-header {
-  padding: 20px;
-  background-color: var(--accent1-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo img {
-  height: 50px; /* Ajuste conforme necessário */
+footer {
+  text-decoration: none;
 }
 
 nav a {
   text-decoration: none;
-  color: var(--nav-link-color);
-  padding: 10px;
 }
 
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-
-/* Estilizando o herói */
 .hero {
   position: relative;
-  width: 100%;
-  height: 400px; /* Altura do herói */
-  overflow: hidden;
 }
 
 .hero img {
   display: block;
   width: 100%;
   height: auto;
-  object-fit: cover; /* Garante que a imagem cubra todo o contêiner */
 }
 
 .hero h1 {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 36px;
-  text-align: center;
+  top: 100px;
+  left: 37%;
+  
 }
 
-/* Estilizando o artigo */
-article {
+.hero article {
   position: absolute;
-  top: 30%;
-  left: 75%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adicionando opacidade ao fundo */
-  padding: 10px;
-  color: white;
-  width: 20%; /* Largura do artigo */
-  max-width: 500px; /* Largura máxima do artigo */
-
-}
-
-article img {
-  float: right;
-  width: 12px; /* Tamanho da imagem */
-  height: auto;
-}
-
-/* Estilizando as seções */
-section {
+  bottom: 60%;
+  left: 10%;
+  background-color: rgba(44, 62, 80, 0.7); 
   padding: 20px;
+  width: 80%;
 }
 
-section img {
-  display: block;
-  margin-bottom: 10px;
-  width: 100%; /* Ocupa toda a largura do contêiner */
+.hero article p {
+  float: left;
+  width: 70%; 
 }
 
-/* Estilizando o rodapé */
-footer {
-  background-color: var(--accent1-color);
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  margin-bottom: 10px;
-}
-
-footer .sociallinks {
-  margin-top: 10px;
-}
-
-footer .sociallinks a {
-  margin: 0 10px;
+.hero article img {
+  float: right; 
+  max-width: 30%; 
 }
