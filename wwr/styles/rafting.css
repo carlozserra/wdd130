@@ -17,24 +17,24 @@
   --nav-hover-background-color: #CCA43B
 }
 
+/* index page ----------------------------*/
 
-body{
-  max-width: 900px;
-  padding: 20px;
-  margin: 0% auto;
-  
+
+body {
+  background-color: var(--accent2-color);
 }
-
 header {
   background-color: var(--primary-color);
   padding: 20px;
 }
 h1,h2 {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--paragraph-font);
 } 
 
 p {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--paragraph-font);
 }
 
 footer {
@@ -47,8 +47,10 @@ footer p {
 }
 
 nav a {
+  font-family: var(--paragraph-font);
   text-decoration: none;
   color: var(--secondary-color);
+  
 }
 
 .hero {
@@ -97,62 +99,53 @@ section {
   overflow: hidden;
 }
 
-.map {
+/* contact page -------------------------*/
+
+.map {    /*map*/
 	width: 492px;
 	height: 449px;
 }
- 
-.h {
+
+.workers {  /*workers */
   width: 100%; 
   text-align: center;
   background-size: cover;
 }
-.h img {
+.workers img {  /*workers */
   width: 100px; 
   height: auto;
   display: inline-block; 
   
 }
-
-.contact {
+.contact { /*contact information*/
   width: auto; 
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 20px;
   border: 5px solid var(--primary-color);
-
+  font-family: var(--paragraph-font);
 }
-.contact ul {
-  list-style-type: none;
+.contact ul {  /*contact information*/
+  list-style-type: none;  
   padding: 0;
- 
 }
-
-.contact li {
-  margin-bottom: 10px;
-  
+.contact li {  /*contact information*/
+  margin-bottom: 10px; 
 }
-.line {
-  background-color: var(--primary-color);
-  width: 1px;
-}
-
-#line {
+#line {  /*contact information line ID*/
   width: 200px;
   border: 1px solid var(--primary-color);
 }
 
-
-
-form {
+form {   /* form */
     width: auto;
     padding: 20px;
     background-color: var(--secondary-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border: 5px solid var(--primary-color);
+    font-family: var(--paragraph-font);
 
 }
-
 .form-container {
   display: flex;
   justify-content: space-around;
@@ -183,7 +176,84 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-family: var(--paragraph-font);
 }
 button:hover {
     background-color: var(--accent1-color);
 }
+
+/* trips      -----------------------------------*/
+
+.back {
+  position: relative;
+}
+
+.back img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  
+}
+
+.back h1 {
+  position: absolute;
+  top: 100px;
+  left: 37%;
+  color: var(--accent1-color);
+  
+}
+ 
+
+main {
+  padding: 20px;
+}
+
+.trip {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.trip-info {
+  margin-left: 20px;
+}
+
+.trip-info img {
+  width: 300px;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 40px;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+th, td {
+  width: auto;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
