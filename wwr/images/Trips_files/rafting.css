@@ -186,49 +186,42 @@ button:hover {
 
 /* trips      -----------------------------------*/
 
+.enjoy {
+  position: relative;
+}
+
+.enjoy img {
+  display: block;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  opacity: 40%;
+  margin-bottom: 300px;
+}
+
+.enjoy h1 {
+  font-size: 70px;
+  position: absolute;
+  align-items: center;
+  top: 110px;
+  left: 30%;
+  color: var(--accent1-color);
+  
+}
+ 
 main {
-  display: grid;
-  grid-template-columns: repeat(3, 2fr);
-  grid-gap: 20px;
   padding: 20px;
 }
 
-.trip {
+.trip h2 {
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--primary-color);
-  border-radius: 5px;
-}
-
-.trip-info {
-  flex: 1;
-  padding: 20px;
-}
-
-.trip-info h2 {
-  margin-top: 0;
-}
-
-.trip-image img {
-  width: 100%;
-  height: auto;
-}
-button {
-  background-color: #007BFF;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 table {
-  position: relative;
-  left: 50%;
   width: 100%; /*form*/
   border-collapse: collapse;
   margin-top: 40px;
-  
 }
 
 caption {     /*form*/

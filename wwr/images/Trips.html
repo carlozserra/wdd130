@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en-US">
-<head>
-    <meta charset="utf-8">
+<!-- saved from url=(0036)http://127.0.0.1:5500/wwr/trips.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trips</title>
     <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information and a style guide for the course website project.">
     <meta name="author" content="Carlos Serra">
-    <link rel="stylesheet" href="styles/rafting.css">
-</head>
+    
+<link rel="stylesheet" href="./Trips_files/rafting.css"></head>
 <body>
     <header> 
-        <img src="images/logor.png" alt=" Company logo">
+        <img src="./Trips_files/logor.png" alt=" Company logo">
         <nav>
             <a href="https://carlozserra.github.io/wdd130/wwr/index.html">Home</a> 
             <a href="https://carlozserra.github.io/wdd130/wwr/about.html">About</a> 
@@ -19,46 +19,45 @@
         </nav>
     </header>
     <main>
-        
+    
+        <div class="enjoy">
+            <h1>ENJOY THE JOURNEY</h1>
+            <img src="./Trips_files/wall.jpg" alt="">
+        </div>
+
         <section class="trip">
+            <h2>Trip 1: River Adventure</h2>
             <div class="trip-info">
-                <h2>Trip 1: River Adventure</h2>
+                <img src="./Trips_files/raft1.jpg" alt="River Adventure">
                 <p>Join us for an exciting rafting adventure down the thrilling rapids of the River Adventure. This trip is perfect for adrenaline junkies and nature lovers alike.</p>
                 <p>Date: June 15th, 2024</p>
                 <p>Duration: 1 day</p>
                 <p>Difficulty: Intermediate</p>
                 <button>Book Now</button>
             </div>
-            <div class="trip-image">
-                <img src="images/raft1.jpg" alt="River Adventure">
-            </div>
         </section>
 
         <section class="trip">
+            <h2>Trip 2: Mountain Expedition</h2>
             <div class="trip-info">
-                <h2>Trip 2: Mountain Expedition</h2>
+                <img src="./Trips_files/raft2.jpg" alt="Mountain Expedition">
                 <p>Embark on a thrilling rafting expedition through the scenic mountains. Experience the rush of conquering challenging rapids while surrounded by breathtaking views.</p>
                 <p>Date: July 20th, 2024</p>
                 <p>Duration: 2 days</p>
                 <p>Difficulty: Advanced</p>
                 <button>Book Now</button>
             </div>
-            <div class="trip-image">
-                <img src="images/raft2.jpg" alt="Mountain Expedition">
-            </div>
         </section>
 
         <section class="trip">
+            <h2>Trip 3: Sunset Safari</h2>
             <div class="trip-info">
-                <h2>Trip 3: Sunset Safari</h2>
+                <img src="./Trips_files/raft3.jpg" alt="Sunset Safari">
                 <p>Enjoy a leisurely rafting journey as you witness the stunning sunset over the tranquil waters. This trip is perfect for those looking for a relaxing outdoor experience.</p>
                 <p>Date: August 10th, 2024</p>
                 <p>Duration: 1 day</p>
                 <p>Difficulty: Beginner</p>
                 <button>Book Now</button>
-            </div>
-            <div class="trip-image">
-                <img src="images/raft3.jpg" alt="Sunset Safari">
             </div>
         </section>
 
@@ -101,18 +100,56 @@
 
     </main>
     <footer>
-        <p>&copy; 2024, Rafting Club, Carlos Serra.</p>
+        <p>© 2024, Rafting Club, Carlos Serra.</p>
         <nav class="sociallinks">
             <a href="https://www.facebook.com/">
-              <img src="images/facebook.png" alt=" facebook">
+              <img src="./Trips_files/facebook.png" alt=" facebook">
             </a>
             <a href="https://www.twitter.com/">
-              <img src="images/X.png" alt="">
+              <img src="./Trips_files/X.png" alt="">
             </a>
             <a href="https://www.instagram.com/">
-              <img src="images/instagram.png" alt="">
+              <img src="./Trips_files/instagram.png" alt="">
             </a>
         </nav>
     </footer>
-</body>
-</html>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
