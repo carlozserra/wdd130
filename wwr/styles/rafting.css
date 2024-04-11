@@ -17,10 +17,12 @@
   --nav-hover-background-color: #CCA43B
 }
 
+
 body{
   max-width: 900px;
   padding: 20px;
   margin: 0% auto;
+  
 }
 
 header {
@@ -37,10 +39,16 @@ p {
 
 footer {
   text-decoration: none;
+  background-color: var(--primary-color);
+  
+}
+footer p {
+  color: #e5e5e5;
 }
 
 nav a {
   text-decoration: none;
+  color: #e5e5e5;
 }
 
 .hero {
@@ -77,4 +85,105 @@ nav a {
 .hero article img {
   float: right; 
   max-width: 30%; 
+}
+
+nav img {
+  width: 30px;
+  height: auto;
+  margin: 5px;
+}
+
+section {
+  overflow: hidden;
+}
+
+.map {
+	width: 492px;
+	height: 449px;
+}
+ 
+.h {
+  width: 100%; 
+  text-align: center;
+  background-size: cover;
+}
+.h img {
+  width: 100px; 
+  height: auto;
+  display: inline-block; 
+  
+}
+
+.contact {
+  width: auto; /* Adjust the width as needed */
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  padding: 20px;
+  border: 5px solid var(--primary-color);
+
+}
+.contact ul {
+  list-style-type: none;
+  padding: 0;
+ 
+}
+
+.contact li {
+  margin-bottom: 10px;
+  
+}
+.line {
+  background-color: var(--primary-color);
+  width: 1px;
+}
+
+#line {
+  width: 200px;
+  border: 1px solid var(--primary-color);
+}
+
+
+
+form {
+    width: 50% auto;
+    padding: 20px;
+    background-color: var(--accent2-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid var(--primary-color);
+
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 19px;
+}
+label {
+    color: var(--primary-color);
+    margin-bottom: 50%;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: var(--secondary-color);
 }
