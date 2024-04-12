@@ -213,6 +213,7 @@ section {
   border: 5px solid var(--primary-color);
   font-family: var(--paragraph-font);
 }
+
 .contact ul {  /*contact information*/
   list-style-type: none;  
   padding: 0;
