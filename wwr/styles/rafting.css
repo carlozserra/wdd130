@@ -1,7 +1,6 @@
 
 @import url(https://fonts.googleapis.com/css2?family=Acme&family=Martel:wght@200;300;400;600;700;800;900&family=Noto+Sans+Khojki&display=swap);
 
-
 :root{
   --primary-color: #CCA43B ;
   --secondary-color: #242F40;
@@ -12,46 +11,126 @@
   --paragraph-font:"Martel", serif;
 
   --nav-background-color: #e5e5e5;
-  --nav-link-color: #ec0000;
+  --nav-link-color: #242F40;
   --nav-hover-link-color: #ffffff;
   --nav-hover-background-color: #CCA43B
 }
 
 /* about us page ----------------------------*/
 
-
 body {
   background-color: var(--accent2-color);
 }
-header {
-  background-color: var(--primary-color);
-  padding: 20px;
-}
-h1,h2 {
+h1 {
   color: var(--primary-color);
   font-family: var(--paragraph-font);
 } 
-
+h2 {
+  color: var(--primary-color);
+  font-family: var(--paragraph-font);
+  text-align: center;
+}
 p {
   color: var(--primary-color);
   font-family: var(--paragraph-font);
 }
-
-footer {
-  text-decoration: none;
+header {
+  display: grid;
+	grid-template-columns: 500px 2fr 2fr;
+  align-items: center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
   background-color: var(--primary-color);
-  
+  padding: 10px;
 }
-footer p {
-  color: var(--secondary-color);
+header img {
+  margin: 0 0.25rem 0 1rem;
+	width: 100px;
+	height: auto;
+  margin-right: 60px;
+}
+
+nav {
+  font-size: 1rem;
+  display: flex;
 }
 
 nav a {
+  display: block;
+  padding: 0.5rem; 
+  margin:10px;
+}
+
+nav a:hover {
+  color: var(--accent1-color);
+	font-weight: 700;
+}
+/*-------middle of the page ----------*/
+.adventures {
+  display: flex;
+  align-items: flex-end;
+}
+
+.adventures figure {
+  margin: 10px;
+  padding: 10px;
+}
+
+.adventures img {
+  width: 100%; 
+  height: 200px;
+}
+
+.adventures figcaption {
+  margin-top: 5px; /* Add space between image and caption */
+  font-family: var(--heading-font);/* Style captions as italic */
+  color: var(--primary-color); /* Adjust caption color */
+  font-size: 12px; /* Adjust caption font size */
+}
+/*the bottom, but above the footer ------------------------------- */
+.history {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: justify; /* Justify text */ /* Set maximum width for better responsiveness */
+  margin: 0 auto; /* Center the section */
+}
+
+.history img {
+  flex: 0 0 50%; /* Take half of the container's width */
+  width: 10px;
+  margin: 100px; /* Add space around the image */
+}
+
+.history p {
+  flex: 0 0 1%; /* Take half of the container's width */
+
+  margin: 0; /* Remove default margins */
+}
+
+
+footer {
+  background-color: var(--primary-color);
+}
+
+footer p {
+  color: var(--secondary-color);
+ 
+}
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sociallinks img {
+  width: 30px;
+  height:auto;
+}
+
+nav a {
+
   font-family: var(--paragraph-font);
   text-decoration: none;
   color: var(--secondary-color);
-  
-}
+} 
 
 .hero {
   position: relative;
@@ -68,8 +147,6 @@ nav a {
   top: 100px;
   left: 30%;
   font-size: 80px;
-
-  
 }
 
 .hero article {
