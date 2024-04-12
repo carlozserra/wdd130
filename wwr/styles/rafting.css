@@ -80,30 +80,30 @@ nav a:hover {
 }
 
 .adventures figcaption {
-  margin-top: 5px; /* Add space between image and caption */
-  font-family: var(--heading-font);/* Style captions as italic */
-  color: var(--primary-color); /* Adjust caption color */
-  font-size: 12px; /* Adjust caption font size */
+  margin-top: 5px; 
+  font-family: var(--heading-font);
+  color: var(--primary-color); 
+  font-size: 12px; 
 }
 /*the bottom, but above the footer ------------------------------- */
 .history {
   display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center; /* Center horizontally */
-  text-align: justify; /* Justify text */ /* Set maximum width for better responsiveness */
-  margin: 0 auto; /* Center the section */
+  align-items: center; 
+  justify-content: center; 
+  text-align: justify; 
+  margin: 0 auto; 
 }
 
 .history img {
-  flex: 0 0 50%; /* Take half of the container's width */
+  flex: 0 0 50%; 
   width: 10px;
-  margin: 100px; /* Add space around the image */
+  margin: 100px; 
 }
 
 .history p {
-  flex: 0 0 1%; /* Take half of the container's width */
+  flex: 0 0 1%; 
 
-  margin: 0; /* Remove default margins */
+  margin: 0; 
 }
 
 
